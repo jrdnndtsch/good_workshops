@@ -5,7 +5,10 @@
 	:transform translateY(50%)
 	:font-size 6rem
 	:line-height 7.2rem
-	:font-weight 400 
+	:font-weight 400
+	+display-for(md sm xs)
+		:font-size 4.4rem
+		:line-height 5.2rem 
 
 .up-five-subtitle 
 	:font-size 2rem
@@ -16,6 +19,8 @@
 	:line-height 40px
 	:color #1E46F4
 	:font-weight 400
+	+display-for(md sm xs) 
+		:margin 30px auto
 
 .primary-title 
 	:background #1E46F4
@@ -28,17 +33,66 @@
 	:line-height 2.4rem
 	:font-weight normal
 	:margin 50px 0
+	+display-for(md sm xs)
+		:width unset 
+		:transform translate(-25%)
+		:white-space nowrap
+
+.ua5-photo 
+	:position absolute
+	:top 280px
+	:right 60px
+	:max-width 400px
+	:opacity 0.5
+	+display-for(md sm xs)
+		:display none
 
 .up-five_image 
 	:max-width 20%
 	:display block
+	+display-for(md sm xs)
+		:max-width 30%
 
 .sponsor 
 	:margin-bottom 40px
 .sponsor_image 
 	:max-width 70%
 	:display block
+	+display-for(md sm xs)
+		:max-width 80%
+			
+ul 
+	:list-style none
+	:padding-left 0
 
 p, li 
 	:font-size 1.4rem
 	:line-height 1.9rem
+.tito-ticket-quantity 
+	:text-align center
+.tito-ticket-quantity input
+	:line-height 1.9rem
+	:border 2px solid black
+	:padding 5px 10px
+	:margin-top 20px
+.tito-submit-wrapper 
+	:text-align center
+	:margin-bottom 20px
+.tito-submit
+	:border 2px solid black
+	:padding 10px 22px
+	:font-size 1.4rem
+	:display inline-block
+	:text-decoration none
+	:color black
+	:background $grey	
+	:transition 0.3s
+
+.tito-submit:hover 
+	:color white
+	:background black
+
+.affiliate_image 
+	:width 160px
+	:display block 
+	:margin 0 auto

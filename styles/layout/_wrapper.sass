@@ -6,8 +6,12 @@
 		:display flex
 		&-wrap 
 			:flex-wrap wrap
+	+display-for(md sm xs)
+		:width 90%
 .wrapper--grey
 	:background $grey	
 	:max-width 620px
 	:margin 0 auto 
-	:padding 80px			
+	:padding 80px	
+	+display-for(md sm xs)
+		:padding 40px
