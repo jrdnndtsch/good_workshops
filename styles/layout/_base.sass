@@ -73,14 +73,22 @@ p.schedule
 .tito-ticket-name, .tito-ticket-price
 	:font-size 2.2rem
 	:line-height 5rem
+.tito-ticket-price 
+	:width 15%		
 .tito-ticket-quantity 
 	:text-align center
+	:width 85%
+	:display flex
+	:justify-content space-between
+	:align-items center
+.tito-ticket-price
+	:display inline-block		
 .tito-ticket-quantity input
 	:line-height 1.9rem
 	:border 2px solid black
 	:padding 5px 10px
-	:margin-top 20px
-	:width 95px
+	:width 90% 
+	:background $grey
 .tito-submit-wrapper 
 	:text-align center
 	:margin-bottom 20px
@@ -93,10 +101,16 @@ p.schedule
 	:color black
 	:background $grey	
 	:transition 0.3s
-
+	:width 100%
 .tito-submit:hover 
 	:color white
 	:background black
+.tito-ticket-price-quantity
+	:display flex		
+	:margin-top 20px
+.tito-badge-link 
+	a 
+		:color black
 
 .affiliate_image 
 	:width 160px
